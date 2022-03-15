@@ -113,8 +113,8 @@ function deploy_base_on_bsc() {
 
 
     tool_check FT addRouting
-    tool_check CONTRACT addRouting
     tool_check grantRole
+    tool_check CONTRACT addRouting
     tool_check hasRole
 }
 
