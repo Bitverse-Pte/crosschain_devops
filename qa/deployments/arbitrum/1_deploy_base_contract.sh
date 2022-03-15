@@ -97,7 +97,7 @@ function tool_check() {
 }
 
 function deploy_base_on_arbitrum() {
-    cd ../helper/local/xibc-contracts/evm
+    cd ../helper/qa/xibc-contracts/evm
 
     tool_check LIGHT_CLIENT_GEN_VALHASH_ADDRESS
     tool_check ACCESS_MANAGER_ADDRESS
