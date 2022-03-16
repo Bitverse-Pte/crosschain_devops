@@ -185,7 +185,7 @@ startTssBridgeNode
 create_client_on_eth
 
 # exit to pre path
- cd ../../../../local
+cd ../../../../local
 
 
 cd deployments/eth

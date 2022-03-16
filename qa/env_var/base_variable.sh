@@ -37,3 +37,6 @@ export TELE_CHAIN_ID=teleport_7001-1
 export TELE_TM_RPC=tcp://localhost:26657
 export TELE_9090=localhost:9090
 
+
+#RELAYER ADDRESS
+
