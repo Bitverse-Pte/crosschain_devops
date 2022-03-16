@@ -95,7 +95,7 @@ function tool_check() {
 }
 
 function deploy_base_on_eth() {
-    cd ../helper/qa/xibc-contracts/evm
+    cd helper/xibc-contracts/evm
 
     tool_check LIGHT_CLIENT_GEN_VALHASH_ADDRESS
     tool_check ACCESS_MANAGER_ADDRESS
@@ -111,7 +111,6 @@ function deploy_base_on_eth() {
     tool_check MULTICALl_ADDRESS
     tool_check PROXY_ADDRESS
 
-
     tool_check grantRole
     tool_check FT addRouting
     tool_check CONTRACT addRouting
@@ -124,8 +123,8 @@ update_env
 
 deploy_base_on_eth
 
-rm -rf ../../../../qa/env_eth_base.txt
-mv env.txt ../../../../qa/env_var/env_eth_base.txt
+rm -rf ../../../env_var/env_eth_base.txt
+mv env.txt ../../../env_var/env_eth_base.txt
 
 # exit to pre path
-cd  ../../../../qa/deployments/eth
+cd ../../../deployments/eth/

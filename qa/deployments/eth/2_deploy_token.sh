@@ -12,11 +12,9 @@ function hardhat_deploy_token(){
     yarn hardhat deployTestToken --name ETHUSDT --symbol USDT --decimals 18 --transfer $ETH_SUPER_ADMIN --network $ETH_NETWORK_NAME
   fi
 
-
   if [ "$1" = "ETHTELE" ]; then
     yarn hardhat deployTestToken --name ETHTELE --symbol TELE --decimals 18 --transfer $ETH_SUPER_ADMIN --network $ETH_NETWORK_NAME
   fi
-
 
   if [ "$1" = "TELEUSDT" ]; then
     yarn hardhat deployTestToken --name TELEUSDT --symbol USDT --decimals 18 --transfer $ETH_SUPER_ADMIN --network $TELE_NETWORK_NAME
@@ -52,7 +50,7 @@ function tool_check() {
 
 
 function deploy_token_on_eth() {
-    cd ../helper/qa/xibc-contracts/erc20
+    cd helper/xibc-contracts/erc20
 
     hardhat_deploy_token ETHUSDT
 
@@ -68,11 +66,11 @@ function deploy_token_on_tele(){
 deploy_token_on_eth
 deploy_token_on_tele
 
-rm -rf ../../../../qa/env_var/env_eth_token.txt
-mv env.txt ../../../../qa/env_var/env_eth_token.txt
+rm -rf ../../../env_var/env_eth_token.txt
+mv env.txt ../../../env_var/env_eth_token.txt
 
 
-cd ../../../../qa
+cd ../../../
 source env_var/env_eth_token.txt
 
 cd deployments/eth

@@ -37,6 +37,9 @@ export TELE_CHAIN_ID=teleport_7001-1
 export TELE_TM_RPC=tcp://localhost:26657
 export TELE_9090=localhost:9090
 
+export TELE_VOTING_PERIOD=60       # seconds
+export TELE_VOTING_VALIDATORS=1   # how many validators will voting for proposals
+
 
 #RELAYER ADDRESS
 

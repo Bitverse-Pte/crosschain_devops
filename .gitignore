@@ -4,7 +4,6 @@ helper/local/xibc-contracts/
 helper/local/tss-bridge/
 helper/local/tss-node/
 
-helper/qa/xibc-contracts/
 
 local/tss_config/bridge_api_config.toml
 local/tss_config/node0_config.toml
@@ -15,3 +14,9 @@ local/tss_config/relayd_config.toml
 local/tss_config/tss_clientState.json
 
 local/nohup.out
+local/helper/tss-bridge
+local/helper/tss-node
+local/helper/xibc-contracts
+
+
+qa/helper/xibc-contracts/
