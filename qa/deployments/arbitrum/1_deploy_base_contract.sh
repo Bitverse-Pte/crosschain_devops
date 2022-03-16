@@ -114,8 +114,8 @@ function deploy_base_on_arbitrum() {
     tool_check PROXY_ADDRESS
 
 
-    tool_check FT addRouting
     tool_check grantRole
+    tool_check FT addRouting
     tool_check CONTRACT addRouting
     tool_check hasRole
 }
