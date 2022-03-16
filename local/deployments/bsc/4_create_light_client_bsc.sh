@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../../../local
+cd ../../
 
 function  voteProposal(){
   for ((i=0; i<=0; i++))
@@ -40,7 +40,7 @@ function crate_client_on_tele() {
       -y -b block --title "test" --description "test"  \
       --gas auto --fees 25000000000000000000atele --node $TELE_TM_RPC
 
-    voting 4
+    voting 3
 
     teleport tx gov submit-proposal relayer-register bscmock \
      $RELAYER1_BASE64ADDRESS  \
@@ -51,7 +51,7 @@ function crate_client_on_tele() {
      --node $TELE_TM_RPC \
      --gas auto  --fees 250000000000000000atele
 
-    voting 5
+    voting 4
 
     ### register-trace  0x1000...3
     teleport tx gov submit-proposal \
@@ -63,11 +63,11 @@ function crate_client_on_tele() {
        --node $TELE_TM_RPC --gas auto  --fees 2500000000000000000atele
 
     ### vote for this proposal
-    voting 6
+    voting 5
 }
 
 function create_client_on_bsc(){
-  cd ../helper/local/xibc-contracts/evm
+  cd helper/xibc-contracts/evm
   yarn hardhat createClientFromFile  --chain teleport --client $TENDERMINT_CLIENT \
     --clientstate  ~/.teleport-relayer/tendermint_clientState.txt \
     --consensusstate ~/.teleport-relayer/tendermint_consensusState.txt \
@@ -81,4 +81,4 @@ crate_client_on_tele
 create_client_on_bsc
 
 # exit to pre path
-cd ../../../../local/deployments/bsc
+cd ../../../deployments/bsc

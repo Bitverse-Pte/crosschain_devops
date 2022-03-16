@@ -48,7 +48,7 @@ function tool_check() {
 
 
 function deploy_token_on_bsc() {
-    cd ../helper/local/xibc-contracts/erc20
+    cd helper/xibc-contracts/erc20
 
     hardhat_deploy_token BSCUSDT
 
@@ -64,11 +64,11 @@ function deploy_token_on_tele(){
 deploy_token_on_bsc
 deploy_token_on_tele
 
-rm -rf ../../../../local/env_var/env_bsc_token.txt
-mv env.txt ../../../../local/env_var/env_bsc_token.txt
+rm -rf ../../../env_var/env_bsc_token.txt
+mv env.txt ../../../env_var/env_bsc_token.txt
 
 
-cd ../../../../local
+cd ../../../
 source env_var/env_bsc_token.txt
 
 cd deployments/bsc

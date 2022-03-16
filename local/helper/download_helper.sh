@@ -19,11 +19,11 @@ function download_xibc() {
     cd ../../../  &&  echo $PWD
 
     # replace config
-    cp -r local/hardhat-config/hardhat.config.erc20.ts helper/local/xibc-contracts/erc20/hardhat.config.ts \
-    && cp -r local/hardhat-config/hardhat.config.evm.ts helper/local/xibc-contracts/evm/hardhat.config.ts
+    cp -r local/hardhat-config/hardhat.config.erc20.ts helper/xibc-contracts/erc20/hardhat.config.ts \
+    && cp -r local/hardhat-config/hardhat.config.evm.ts helper/xibc-contracts/evm/hardhat.config.ts
 
     # recompile for build error
-    cd helper/local/xibc-contracts/evm && yarn compile
+    cd helper/xibc-contracts/evm && yarn compile
     cd ../erc20 && yarn compile
     cd ../../
   else

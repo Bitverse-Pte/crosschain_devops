@@ -1,8 +1,8 @@
 .idea/
 
-helper/local/xibc-contracts/
-helper/local/tss-bridge/
-helper/local/tss-node/
+helper/xibc-contracts/
+helper/tss-bridge/
+helper/tss-node/
 
 
 local/tss_config/bridge_api_config.toml

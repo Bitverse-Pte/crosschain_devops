@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../../../local
+cd ../../
 
 function change_relayer_config() {
     #!/bin/bash
