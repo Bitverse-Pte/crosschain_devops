@@ -18,7 +18,7 @@ export BSC_CHAIN_URL=http://localhost:7545
 export BSC_RELAYER_TYPE=eth
 
 # TELE_VARIABLE
-# teleport voting_period
+# teleport_cluster voting_period
 export TELE_NETWORK_NAME=teleport
 export TELE_CHAIN_NAME=teleport
 export TELE_CHAIN_ID=teleport_7001-1

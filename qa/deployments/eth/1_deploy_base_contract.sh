@@ -115,6 +115,8 @@ function deploy_base_on_eth() {
     tool_check grantRole
     tool_check FT addRouting
     tool_check CONTRACT addRouting
+
+    sleep 20
     tool_check hasRole
 }
 
