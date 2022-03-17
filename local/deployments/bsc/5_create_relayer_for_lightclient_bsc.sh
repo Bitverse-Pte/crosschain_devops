@@ -37,7 +37,7 @@ function change_relayer_config() {
 
       sed -i  's/Addr = "0xba8174c2163bbd2cb08407c954dd14a1b7c1f0c5"/Addr = '$packet_address'/g' ./config-bsc.toml
       sed -i  's/Addr = "0xe6941a40723dd08bf4ce55c64c837a58ae62a623"/Addr = '$client_address'/g' ./config-bsc.toml
-      sed -i '' 's/grpc_addr = "10.41.20.10:9090"/grpc_addr = '$tele_9090'/g' ./config-bsc.toml
+      sed -i  's/grpc_addr = "10.41.20.10:9090"/grpc_addr = '$tele_9090'/g' ./config-bsc.toml
   fi
 }
 

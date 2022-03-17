@@ -40,7 +40,7 @@ function crate_client_on_tele() {
       -y -b block --title "test" --description "test"  \
       --gas auto --fees 25000000000000000000atele --node $TELE_TM_RPC
 
-    voting 3
+    voting 1
 
     teleport tx gov submit-proposal relayer-register bscmock \
      $RELAYER1_BASE64ADDRESS  \
@@ -51,7 +51,7 @@ function crate_client_on_tele() {
      --node $TELE_TM_RPC \
      --gas auto  --fees 250000000000000000atele
 
-    voting 4
+    voting 2
 
     ### register-trace  0x1000...3
     teleport tx gov submit-proposal \
@@ -63,7 +63,7 @@ function crate_client_on_tele() {
        --node $TELE_TM_RPC --gas auto  --fees 2500000000000000000atele
 
     ### vote for this proposal
-    voting 5
+    voting 3
 }
 
 function create_client_on_bsc(){
