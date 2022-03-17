@@ -6,18 +6,18 @@ export ETH_SUPER_ADMIN=0x046649651242a3D1aAFFbfc2688B7ec6C976DEA5
 export ETH_CHAIN_NAME=rinkeby
 export ETH_MULTISEND_ROLE=MULTISEND_ROLE
 export ETH_CHAIN_ID=4
-export ETH_CHAIN_URL=http://localhost:9545
+export ETH_CHAIN_URL=http://localhost:8545
 export ETH_RELAYER_TYPE=eth
 export ETH_GNOSIS_SAFE_ADDRESS=0xc758534A55ffA37EcC685C0B8D7238D3997002D6
 
 
 # BSC variable
-export BSC_NETWORK_NAME=bsc-testnet
+export BSC_NETWORK_NAME=bsctest
 export BSC_SUPER_ADMIN=0x046649651242a3D1aAFFbfc2688B7ec6C976DEA5
 export BSC_CHAIN_NAME=bsc-testnet
 export BSC_MULTISEND_ROLE=MULTISEND_ROLE
 export BSC_CHAIN_ID=97
-export BSC_CHAIN_URL=http://localhost:9545
+export BSC_CHAIN_URL=http://localhost:8545
 export BSC_RELAYER_TYPE=bsc
 export BSC_GNOSIS_SAFE_ADDRESS=0x927BdC5a64aAD17AC40740b5253B945E868F1cEf
 
@@ -28,7 +28,7 @@ export ARBITRUM_SUPER_ADMIN=0x046649651242a3D1aAFFbfc2688B7ec6C976DEA5
 export ARBITRUM_CHAIN_NAME=ethmock
 export ARBITRUM_MULTISEND_ROLE=MULTISEND_ROLE
 export ARBITRUM_CHAIN_ID=3133789
-export ARBITRUM_CHAIN_URL=http://localhost:9545
+export ARBITRUM_CHAIN_URL=http://localhost:8545
 export ARBITRUM_RELAYER_TYPE=eth
 export ARBITRUM_GNOSIS_SAFE_ADDRESS=?
 
@@ -36,12 +36,12 @@ export ARBITRUM_GNOSIS_SAFE_ADDRESS=?
 #TELE variable
 export TELE_NETWORK_NAME=teleport
 export TELE_CHAIN_NAME=teleport
-export TELE_CHAIN_ID=teleport_7001-1
+export TELE_CHAIN_ID=teleport_8001-1
 export TELE_TM_RPC=tcp://localhost:26657
 export TELE_9090=localhost:9090
 
-export TELE_VOTING_PERIOD=60       # seconds
-export TELE_VOTING_VALIDATORS=1   # how many validators will voting for proposals
+export TELE_VOTING_PERIOD=180       # seconds
+export TELE_VOTING_VALIDATORS=11   # how many validators will voting for proposals
 
 
 #RELAYER ADDRESS

@@ -12,7 +12,7 @@ function hardhat_deploy_base(){
   fi
 
   if [ "$1" = "ACCESS_MANAGER_ADDRESS" ]; then
-    yarn hardhat deployAcessManager --network $ETH_NETWORK_NAME --wallet $ETH_SUPER_ADMIN
+    yarn hardhat deployAcessManager --network $ETH_NETWORK_NAME --wallet $ETH_GNOSIS_SAFE_ADDRESS
   fi
 
   if [ "$1" = "CLIENT_MANAGER_ADDRESS" ]; then
@@ -111,6 +111,7 @@ function deploy_base_on_eth() {
     tool_check MULTICALl_ADDRESS
     tool_check PROXY_ADDRESS
 
+    #TODO: to be changed for GNOSIS
     tool_check grantRole
     tool_check FT addRouting
     tool_check CONTRACT addRouting

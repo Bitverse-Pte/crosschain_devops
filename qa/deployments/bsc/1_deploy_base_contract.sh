@@ -12,7 +12,7 @@ function hardhat_deploy_base(){
   fi
 
   if [ "$1" = "ACCESS_MANAGER_ADDRESS" ]; then
-    yarn hardhat deployAcessManager --network $BSC_NETWORK_NAME --wallet $BSC_SUPER_ADMIN
+    yarn hardhat deployAcessManager --network $BSC_NETWORK_NAME --wallet $BSC_GNOSIS_SAFE_ADDRESS
   fi
 
   if [ "$1" = "CLIENT_MANAGER_ADDRESS" ]; then
