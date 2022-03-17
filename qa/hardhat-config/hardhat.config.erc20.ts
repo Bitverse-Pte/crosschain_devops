@@ -23,12 +23,6 @@ module.exports = {
             chainId: 7001,
             gas: 4100000,
         },
-        ethmock: {
-            url: 'http://localhost:9545',
-            gasPrice: 1500000000,
-            chainId: 3133789,
-            gas: 4100000,
-        },
         rinkeby: {
             url: 'https://rinkeby.infura.io/v3/023f2af0f670457d9c4ea9cb524f0810',
             gasPrice: 1500000000,

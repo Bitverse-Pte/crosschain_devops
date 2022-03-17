@@ -3,8 +3,6 @@
 #!/bin/bash
 
 cd ../../
-
-
 source env_var/base_variable.sh
 
 function hardhat_deploy_token(){
@@ -53,14 +51,11 @@ function deploy_token_on_eth() {
     cd helper/xibc-contracts/erc20
 
     hardhat_deploy_token ETHUSDT
-
     hardhat_deploy_token ETHTELE
 }
 
 function deploy_token_on_tele(){
     hardhat_deploy_token TELEUSDT
-hardhat.config.erc20.ts
-hardhat.config.evm.ts
     hardhat_deploy_token TELEETH
 }
 
