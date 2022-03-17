@@ -59,7 +59,8 @@ function deploy_token_on_eth() {
 
 function deploy_token_on_tele(){
     hardhat_deploy_token TELEUSDT
-
+hardhat.config.erc20.ts
+hardhat.config.evm.ts
     hardhat_deploy_token TELEETH
 }
 
