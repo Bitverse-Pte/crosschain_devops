@@ -61,7 +61,6 @@ source 1_deploy_base_contract.sh
 source 2_deploy_token.sh
 source 3_bind_token.sh
 source 4_client_create.sh
-source 5_voting.sh
 ```
 
 ### 五、后续需要对接其他非EVM链，可在`deployments`下创建和eth、bsc同级的文件夹。
