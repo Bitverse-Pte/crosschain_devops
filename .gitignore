@@ -9,6 +9,8 @@ local/tss_config/node3_config.toml
 local/tss_config/relayd_config.toml
 local/tss_config/tss_clientState.json
 
+local/deployments/docker/teleport/teleport
+
 local/nohup.out
 local/helper/tss-bridge
 local/helper/tss-node
