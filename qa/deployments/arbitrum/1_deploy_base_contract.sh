@@ -14,7 +14,7 @@ function hardhat_deploy_base(){
   fi
 
   if [ "$1" = "ACCESS_MANAGER_ADDRESS" ]; then
-    yarn hardhat deployAcessManager --network $ARBITRUM_NETWORK_NAME --wallet $ARBITRUM_SUPER_ADMIN
+    yarn hardhat deployAcessManager --network $ARBITRUM_NETWORK_NAME --wallet $ARBITRUM_GNOSIS_SAFE_ADDRESS
   fi
 
   if [ "$1" = "CLIENT_MANAGER_ADDRESS" ]; then
