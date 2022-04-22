@@ -19,6 +19,7 @@ local/env_var/env_bsc_base.txt
 local/env_var/env_bsc_token.txt
 local/env_var/env_eth_base.txt
 local/env_var/env_eth_token.txt
+local/perf_test/docker
 
 
 qa/helper/xibc-contracts/
